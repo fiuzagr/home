@@ -1,0 +1,6 @@
+! vim: set filetype=xdefaults:
+
+!! Misc Xresources config
+*geometry: 80x20
+*internalBorder: 16
+*visualBell: true

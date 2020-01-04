@@ -1,0 +1,63 @@
+#
+# Generic .zshenv file for zsh
+#
+# .zshenv is sourced on ALL invocations of the shell, unless the -f option is
+# set.  It should NOT normally contain commands to set the command search path,
+# or other common environment variables unless you really know what you're
+# doing.  E.g. running "PATH=/custom/path gdb program" sources this file (when
+# gdb runs the program via $SHELL), so you want to be sure not to override a
+# custom environment in such cases.  Note also that .zshenv should not contain
+# commands that produce output or assume the shell is attached to a tty.
+#
+
+if [ -f /etc/zshenv ]; then
+  source /etc/zshenv
+else
+  PATH="/usr/local/bin:/usr/bin:/opt/3rd-party/bin"
+
+  if [[ -x "/bin/vi" ]]; then
+    EDITOR="/usr/bin/vi"
+  else
+    EDITOR="/usr/bin/nano"  # we have nano by default
+  fi
+  test -z "$TERM" && TERM="xterm" # Basic terminal capab. For screen etc.
+
+  if [ ! -e /etc/localtime ]; then
+    TZ="UTC"                # Time Zone. Look at http://theory.uwinnipeg.ca/gnu/glibc/libc_303.html
+    # for an explanation of how to set this to your local timezone.
+    export TZ
+  fi
+
+    # Set some flags
+    CFLAGS="-g -O3 -feliminate-unused-debug-types  -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=32 -Wformat -Wformat-security -Wl,--copy-dt-needed-entries -m64  -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -malign-data=abi -fno-semantic-interposition -ftree-vectorize -ftree-loop-vectorize "
+    FFLAGS="-g -O3 -feliminate-unused-debug-types  -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=32 -Wl,--copy-dt-needed-entries -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -malign-data=abi -fno-semantic-interposition -ftree-vectorize  -ftree-loop-vectorize "
+    CFFLAGS="-g -O3 -feliminate-unused-debug-types  -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=32 -Wl,--copy-dt-needed-entries -m64  -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -malign-data=abi -fno-semantic-interposition -ftree-vectorize  -ftree-loop-vectorize "
+    CXXFLAGS="$CFLAGS -fvisibility-inlines-hidden "
+
+    export GOMP_SPINCOUNT=1000
+    export AR=gcc-ar
+    export CXX=g++
+    export RANLIB=gcc-ranlib
+    export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/lib
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+    export LD_RUN_PATH=$LD_RUN_PATH:/usr/local/lib
+    export LA_VERSION="OpenBLAS"
+    export LA_LIBS=/usr/lib64/libopenblas.so.0
+    export LA_INCLUDE=/usr/include
+    export LA_PATH=/usr/lib64/
+    export MPI_CC=/usr/bin/mpicc
+    export MPI_LIBS=/usr/lib64/libmpich.so
+    export MPI_INCLUDE=/usr/include/
+    export MPI_PATH=/usr/lib64/
+    export MPI_VERSION=3.2
+    export THEANO_FLAGS='floatX=float32,openmp=true,gcc.cxxflags="-ftree-vectorize -mavx"'
+    export CC=gcc
+
+    for langfile in /usr/share/defaults/etc/locale.conf /etc/locale.conf "$HOME/.i18n" ; do
+      [ -f $langfile ] && . $langfile
+    done
+
+    export LANG LANGUAGE LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT LC_IDENTIFICATION
+
+    export PATH EDITOR TERM CFLAGS CXXFLAGS CFFLAGS FFLAGS
+fi

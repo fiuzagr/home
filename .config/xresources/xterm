@@ -1,0 +1,14 @@
+! vim: set filetype=xdefaults:
+
+!! XTerm Xresources config
+XTerm.termName: xterm-256color
+XTerm.title: hell
+XTerm.vt100.locale: true
+XTerm.vt100.bellIsUrgent: true
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.saveLines: 0
+XTerm.vt100.scaleHeight: 1.15
+! copy paste
+XTerm.vt100.translations: #override \n\
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD)

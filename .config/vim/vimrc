@@ -1,0 +1,10 @@
+" Environment
+set directory=$XDG_CACHE_HOME/vim,~/,/tmp
+set backupdir=$XDG_CACHE_HOME/vim,~/,/tmp
+set viminfo+=n$XDG_CACHE_HOME/vim/viminfo
+set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME
+let $MY_VIM_HOME=expand('$XDG_CONFIG_HOME') . '/vim'
+let $MYVIMRC="$MY_VIM_HOME/vimrc"
+
+" init
+source $MY_VIM_HOME/init.vim

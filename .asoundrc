@@ -1,0 +1,11 @@
+pcm.pulse {
+	type pulse
+}
+
+ctl.pulse {
+	type pulse
+}
+
+pcm.!default pcm.pulse
+
+ctl.!default ctl.pulse

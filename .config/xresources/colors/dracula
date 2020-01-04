@@ -1,0 +1,21 @@
+! vim: set filetype=xdefaults:
+
+! Dracula Xresources palette
+*foreground: rgb:F8/F8/F2
+*background: rgb:28/2A/36
+*color0:     rgb:00/00/00
+*color8:     rgb:4D/4D/4D
+*color1:     rgb:FF/55/55
+*color9:     rgb:FF/6E/67
+*color2:     rgb:50/FA/7B
+*color10:    rgb:5A/F7/8E
+*color3:     rgb:F1/FA/8C
+*color11:    rgb:F4/F9/9D
+*color4:     rgb:BD/93/F9
+*color12:    rgb:CA/A9/FA
+*color5:     rgb:FF/79/C6
+*color13:    rgb:FF/92/D0
+*color6:     rgb:8B/E9/FD
+*color14:    rgb:9A/ED/FE
+*color7:     rgb:BF/BF/BF
+*color15:    rgb:E6/E6/E6

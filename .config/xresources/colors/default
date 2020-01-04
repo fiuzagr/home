@@ -1,0 +1,39 @@
+! vim: set filetype=xdefaults:
+
+! special
+*background: rgb:10/10/10
+*foreground: rgb:d4/d4/d4
+*cursorColor: darkorange2
+
+!black
+*color0:  rgb:17/17/17
+*color8:  rgb:73/73/73
+
+!red
+*color1:  rgb:FF/5E/5E
+*color9:  rgb:FF/78/78
+
+!green
+*color2:  rgb:9C/E8/2B
+*color10: rgb:9A/CD/32
+
+!yellow
+*color3:  rgb:F0/E6/8C
+*color11: rgb:EE/E8/AA
+
+!blue
+*color4:  rgb:00/8A/FF
+*color12: rgb:4F/98/FF
+
+!magenta
+*color5:  rgb:E8/8C/FF
+*color13: rgb:ED/A6/FF
+
+!cyan
+*color6:  rgb:87/CE/FA
+*color14: rgb:B0/E2/FF
+
+!white
+*color7:  rgb:DC/DC/CC
+*color15: rgb:FF/FF/FF
+

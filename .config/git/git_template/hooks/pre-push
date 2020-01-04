@@ -1,0 +1,25 @@
+#!/bin/bash
+
+protected_branchs=${GIT_PROTECTED_BRANCHS:-'master'}
+current_branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
+
+if [[ "$protected_branchs" == *$current_branch* ]]
+then
+  echo "WARNING!!! You're about to push a protected branch '${current_branch}'"
+
+  read -p \
+    "Is that what you intended? [y|n] " \
+    -n 1 -r < /dev/tty
+
+  echo
+
+  if echo $REPLY | tr '[:upper:]' '[:lower:]' | grep -E '^y(es)?$' > /dev/null
+  then
+    exit 0 # push will execute
+  fi
+
+  exit 1 # push will not execute
+else
+  exit 0 # push will execute
+fi
+

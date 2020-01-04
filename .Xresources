@@ -1,0 +1,15 @@
+!! Colors
+!#include ".config/xresources/colors/default"
+#include ".config/xresources/colors/dracula"
+
+!! Misc
+#include ".config/xresources/misc"
+
+!! Font
+#include ".config/xresources/font"
+
+!! URxvt
+! #include ".config/xresources/urxvt"
+
+!! XTerm
+#include ".config/xresources/xterm"
