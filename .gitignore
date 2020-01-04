@@ -12,6 +12,7 @@
 !.xinitrc
 !.Xresources
 !.zshenv
+!README.md
 
 !.config/
 !.config/**/*
