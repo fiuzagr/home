@@ -15,3 +15,7 @@
 ```shell 
 git clone --recurse-submodules ...
 ```
+
+```shell 
+git update-index --assume-unchanged .gitconfig 
+```
