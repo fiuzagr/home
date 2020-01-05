@@ -25,4 +25,13 @@ zplug "$XDG_CONFIG_HOME/zsh/plugins", from:local, use:"*.zsh"
 zplug load # --verbose
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f "$XDG_CONFIG_HOME/zsh/.p10k.zsh" ]] || source "$XDG_CONFIG_HOME/zsh/.p10k.zsh"
+if zmodload zsh/terminfo && (( terminfo[colors] >= 256 ))
+then
+  [[ ! -f "$XDG_CONFIG_HOME/zsh/.p10k.zsh" ]] || {
+    source "$XDG_CONFIG_HOME/zsh/.p10k.zsh"
+  }
+else
+  [[ ! -f "$XDG_CONFIG_HOME/zsh/.p10k-portable.zsh" ]] || {
+    source "$XDG_CONFIG_HOME/zsh/.p10k-portable.zsh"
+  }
+fi
