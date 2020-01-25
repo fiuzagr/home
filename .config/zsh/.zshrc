@@ -35,3 +35,6 @@ else
     source "$XDG_CONFIG_HOME/zsh/.p10k-portable.zsh"
   }
 fi
+
+
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh

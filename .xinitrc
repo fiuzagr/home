@@ -12,5 +12,11 @@ xset m 1/1 0 &
 # Faster keyboard auto-repeat rate
 xset r rate 250 50 &
 
+# screensaver
+xscreensaver -no-splash &
+
+# hide mouse
+unclutter -root &
+
 # open window manager
 exec awesome

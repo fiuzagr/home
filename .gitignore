@@ -15,16 +15,36 @@
 !README.md
 
 !.config/
-!.config/**/*
+!.config/awesome/
+!.config/awesome/**/*
+!.config/coc/
+!.config/coc/*
+!.config/coc/extensions/package.json
+!.config/fontconfig/
+!.config/fontconfig/fonts.conf
+!.config/git/
+!.config/git/**/*
+!.config/ranger/
+!.config/ranger/**/*
+!.config/TabNine/
+!.config/TabNine/**/*
+!.config/tmux/
+!.config/tmux/**/*
+!.config/vim/
+!.config/vim/**/*
+!.config/xresources/
+!.config/xresources/**/*
+!.config/zsh/
+!.config/zsh/**/*
+!.config/dircolors
+!.config/pavucontrol.ini
 
 !.local/
+!.local/bin/
+!.local/bin/*
 !.local/share/
 !.local/share/fonts/
 !.local/share/fonts/*
-!.local/share/ranger/
-!.local/share/ranger/*
-!.local/share/zathura/
-!.local/share/zathura/*
 
 #
 # ignore specific files

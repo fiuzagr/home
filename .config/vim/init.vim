@@ -7,6 +7,13 @@ catch
 endtry
 
 """""""""""""""""""
+" MISC
+"""""""""""""""""""
+if has("patch-8.1.0360")
+  set diffopt+=internal,algorithm:patience
+endif
+
+"""""""""""""""""""
 " Let/Set
 """""""""""""""""""
 " leader
@@ -81,6 +88,22 @@ set modeline
 
 " No cursor line
 set nocursorline
+
+" CursorHold
+set updatetime=300
+
+" don't give |ins-completion-menu| messages
+set shortmess+=c
+
+" always show signcolumns
+set signcolumn=yes
+
+" netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
 
 """""""""""""""""""
 " Maps

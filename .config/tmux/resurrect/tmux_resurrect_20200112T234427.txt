@@ -1,0 +1,9 @@
+pane	0	0	:zsh	0	:-	0	:/home/fiuzagr/workspace/fiuza	1	zsh	:
+pane	0	1	:FM	0	:	0	:/home/fiuzagr	1	python3.7	:/usr/bin/python3.7 -O /usr/bin/ranger
+pane	0	2	:Editor	1	:*	0	:/home/fiuzagr	1	zsh	:
+pane	0	2	:Editor	1	:*	1	:/home/fiuzagr/workspace/iaguara/iaguara	0	zsh	:
+pane	0	2	:Editor	1	:*	2	:/home/fiuzagr/workspace/lfs	0	zsh	:
+window	0	0	0	:-	b144,157x31,0,0,7
+window	0	1	0	:	b141,157x31,0,0,4
+window	0	2	1	:*	5760,157x31,0,0{93x31,0,0,3,63x31,94,0[63x15,94,0,8,63x15,94,16,10]}
+state	0	

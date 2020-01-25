@@ -1,0 +1,61 @@
+#!/bin/env sh
+
+# contrib & non-free
+if ! grep -Fxq "contrib non-free" /etc/apt/sources.list
+then
+  sudo sed -i 's/main/main contrib non-free/g' /etc/apt/sources.list
+fi
+
+# install packages
+sudo apt update
+sudo apt install -y \
+  alsa-utils \
+  alsa-tools \
+  apt-transport-https \
+  arandr \
+  awesome \
+  awesome-extra \
+  curl \
+  fd-find \
+  firmware-linux-nonfree \
+  firmware-atheros \
+  firmware-realtek \
+  git \
+  gnupg \
+  lm-sensors \
+  highlight \
+  network-manager \
+  pulseaudio \
+  ranger \
+  suckless-tools \
+  tmux \
+  unclutter \
+  vim-nox \
+  w3m \
+  w3m-img \
+  x11-xserver-utils \
+  x11-utils \
+  xbacklight \
+  xinit \
+  xsel \
+  xscreensaver \
+  xterm \
+  zsh
+
+# install brave browser
+curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | \
+  apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+
+echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | \
+  sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+sudo apt update
+sudo apt install -y brave-browser
+
+# zplug
+curl -sL --proto-redir -all,https \
+  https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | \
+  ZPLUG_HOME=$XDG_CACHE_HOME/zplug zsh
+
+# tmux tpm
+git clone https://github.com/tmux-plugins/tpm $XDG_CACHE_HOME/tmux/plugins/tpm
