@@ -8,7 +8,3 @@ Xft.autohint: 0
 Xft.antialias: 1
 Xft.rgba: rgb
 Xft.dpi: 120
-*font: xft:MesloLGS NF:style=Regular:size=12:antialias=true
-*boldFont: xft:MesloLGS NF:style=Bold:size=12:antialias=true
-*italicFont: xft:MesloLGS NF:style=Italic:size=12:antialias=true
-*boldItalicfont: xft:MesloLGS NF:style=Bold Italic:size=12:antialias=true

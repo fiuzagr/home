@@ -1,0 +1,27 @@
+! vim: set filetype=xdefaults:
+
+!! XScreenSaver config
+xscreensaver.timeout: 0:05:00
+xscreensaver.cycle: 0:00:00
+xscreensaver.lock: True
+xscreensaver.lockTimeout: 0:01:00
+xscreensaver.passwdTimeout: 0:00:30
+xscreensaver.visualID: default
+xscreensaver.fade: False
+xscreensaver.unfade: False
+xscreensaver.dpmsEnabled: False
+xscreensaver.splash: False
+xscreensaver.mode: one
+xscreensaver.selected: 1
+xscreensaver.programs: \
+  bsod -root -no-dvd \n
+
+! XScreenSaver font settings
+xscreensaver.Dialog.headingFont: -*-verdana-bold-r-*-*-28-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont: -*-verdana-medium-r-*-*-20-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont: -*-verdana-medium-r-*-*-20-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont: -*-verdana-medium-r-*-*-26-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont: -*-verdana-bold-r-*-*-20-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont: -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont: -*-verdana-bold-r-*-*-20-*-*-*-*-*-*-*
+

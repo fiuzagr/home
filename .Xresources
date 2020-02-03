@@ -13,3 +13,6 @@
 
 !! XTerm
 #include ".config/xresources/xterm"
+
+!! XScreenSaver
+#include ".config/xresources/xscreensaver"

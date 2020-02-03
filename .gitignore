@@ -22,6 +22,8 @@
 !.config/coc/extensions/package.json
 !.config/fontconfig/
 !.config/fontconfig/fonts.conf
+!.config/fzf/
+!.config/fzf/**/*
 !.config/git/
 !.config/git/**/*
 !.config/ranger/

@@ -14,6 +14,8 @@ xset r rate 250 50 &
 
 # screensaver
 xscreensaver -no-splash &
+# control screensaver when fullscreen
+lightson+ -d 2 &
 
 # hide mouse
 unclutter -root &

@@ -12,3 +12,9 @@ XTerm.vt100.scaleHeight: 1.15
 XTerm.vt100.translations: #override \n\
     Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
     Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+! use xft font
+XTerm*font: xft:MesloLGS NF:style=Regular:size=12:antialias=true
+XTerm*boldFont: xft:MesloLGS NF:style=Bold:size=12:antialias=true
+XTerm*italicFont: xft:MesloLGS NF:style=Italic:size=12:antialias=true
+XTerm*boldItalicfont: xft:MesloLGS NF:style=Bold Italic:size=12:antialias=true

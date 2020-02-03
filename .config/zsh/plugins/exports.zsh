@@ -9,3 +9,6 @@ export EDITOR='vim'
 
 # Browser
 export BROWSER='brave-browser'
+
+# PATH
+export PATH="${PATH}:${HOME}/.local/bin"
