@@ -11,4 +11,5 @@ export EDITOR='vim'
 export BROWSER='brave-browser'
 
 # PATH
-export PATH="${PATH}:${HOME}/.local/bin"
+export PATH="${PATH}:/usr/local/tinygo/bin:${HOME}/.local/bin"
+typeset -U path

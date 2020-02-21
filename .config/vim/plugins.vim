@@ -54,7 +54,7 @@ Plug 'elzr/vim-json'
 " Tmux Conf
 Plug 'tmux-plugins/vim-tmux'
 " Vim CSS Color
-Plug 'ap/vim-css-color'
+" Plug 'ap/vim-css-color'
 " Kotlin
 Plug 'udalov/kotlin-vim'
 
@@ -65,8 +65,8 @@ Plug 'udalov/kotlin-vim'
 Plug 'tpope/vim-repeat'
 " Fuzzy finder
 Plug 'junegunn/fzf', {
-      \ 'dir': expand('$XDG_CACHE_HOME') . '/fzf', 
-      \ 'do': './install --all --xdg --no-bash --no-fish' 
+      \ 'dir': expand('$XDG_CACHE_HOME') . '/fzf',
+      \ 'do': './install --all --xdg --no-bash --no-fish'
       \}
 " NERDTree
 Plug 'scrooloose/nerdtree'
@@ -111,10 +111,11 @@ let g:ale_fix_on_save = 1
 " let g:ale_set_loclist = 0
 " let g:ale_set_quickfix = 1
 let g:ale_fixers = {
-      \ 'javascript': ['prettier', 'eslint'], 
-      \ 'php': ['phpcbf', 'php_cs_fixer'], 
+      \ 'javascript': ['prettier', 'eslint'],
+      \ 'php': ['phpcbf', 'php_cs_fixer'],
       \ 'python': ['autopep8'],
-      \ 'sh': ['shfmt']
+      \ 'sh': ['shfmt'],
+      \ 'go': ['gofmt']
       \}
 " COC LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

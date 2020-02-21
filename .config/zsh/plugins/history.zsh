@@ -1,7 +1,7 @@
 #
 # History
 
-export HISTFILE="$XDG_CONFIG_HOME/zsh/history"
+export HISTFILE="$XDG_CACHE_HOME/zsh/history"
 export SAVEHIST=10000
 export HISTSIZE=10000
 export HIST_STAMPS="yyyy-mm-dd"
@@ -19,6 +19,8 @@ setopt INC_APPEND_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
 # do not store duplications
 setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_SAVE_NO_DUPS
 # ignore duplicates when searching
 setopt HIST_FIND_NO_DUPS
 # removes blank lines from history

@@ -17,11 +17,11 @@ xscreensaver.programs: \
   bsod -root -no-dvd \n
 
 ! XScreenSaver font settings
-xscreensaver.Dialog.headingFont: -*-verdana-bold-r-*-*-28-*-*-*-*-*-*-*
-xscreensaver.Dialog.bodyFont: -*-verdana-medium-r-*-*-20-*-*-*-*-*-*-*
-xscreensaver.Dialog.labelFont: -*-verdana-medium-r-*-*-20-*-*-*-*-*-*-*
-xscreensaver.Dialog.unameFont: -*-verdana-medium-r-*-*-26-*-*-*-*-*-*-*
-xscreensaver.Dialog.buttonFont: -*-verdana-bold-r-*-*-20-*-*-*-*-*-*-*
-xscreensaver.Dialog.dateFont: -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
-xscreensaver.passwd.passwdFont: -*-verdana-bold-r-*-*-20-*-*-*-*-*-*-*
+! xscreensaver.Dialog.headingFont: -*-verdana-bold-r-*-*-28-*-*-*-*-*-*-*
+! xscreensaver.Dialog.bodyFont: -*-verdana-medium-r-*-*-20-*-*-*-*-*-*-*
+! xscreensaver.Dialog.labelFont: -*-verdana-medium-r-*-*-20-*-*-*-*-*-*-*
+! xscreensaver.Dialog.unameFont: -*-verdana-medium-r-*-*-26-*-*-*-*-*-*-*
+! xscreensaver.Dialog.buttonFont: -*-verdana-bold-r-*-*-20-*-*-*-*-*-*-*
+! xscreensaver.Dialog.dateFont: -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
+! xscreensaver.passwd.passwdFont: -*-verdana-bold-r-*-*-20-*-*-*-*-*-*-*
 
