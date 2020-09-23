@@ -43,24 +43,46 @@ let g:indent_guides_enable_on_vim_startup = 1
 """""""""""""""""""
 " vim-markdown
 Plug 'tpope/vim-markdown'
-" Vim Javascript syntax highlight
-Plug 'pangloss/vim-javascript'
-" Vim JSX syntax highlight
-Plug 'mxw/vim-jsx'
+
+" Vim Javascript / JSX / TS / MDX
+Plug 'yuezk/vim-js'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'maxmellon/vim-jsx-pretty'
+let g:vim_jsx_pretty_colorful_config = 1
+Plug 'jxnblk/vim-mdx-js'
+
 " Vim GraphQL
 Plug 'jparise/vim-graphql'
+
 " Vim JSON
 Plug 'elzr/vim-json'
+
 " Tmux Conf
 Plug 'tmux-plugins/vim-tmux'
+
 " Vim CSS Color
 " Plug 'ap/vim-css-color'
+
 " Kotlin
 Plug 'udalov/kotlin-vim'
 
 """""""""""""""""""
 " Resources
 """""""""""""""""""
+" Tools for writers
+Plug 'reedes/vim-pencil'
+nnoremap <silent> Q gqap
+Plug 'reedes/vim-lexical'
+let g:lexical#spelllang = ['en_us', 'pt_br',]
+let g:lexical#spellfile = ['~/.config/vim/spell/en.utf-8.add',
+                        \ '~/.config/vim/spell/pt.utf-8.add',]
+Plug 'dbmrq/vim-ditto'
+augroup writerTools
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+                            \ | call lexical#init()
+                            \ | DittoOn
+augroup END
 " Repeat commands with dot '.'
 Plug 'tpope/vim-repeat'
 " Fuzzy finder
@@ -111,12 +133,21 @@ let g:ale_fix_on_save = 1
 " let g:ale_set_loclist = 0
 " let g:ale_set_quickfix = 1
 let g:ale_fixers = {
-      \ 'javascript': ['prettier', 'eslint'],
-      \ 'php': ['phpcbf', 'php_cs_fixer'],
-      \ 'python': ['autopep8'],
-      \ 'sh': ['shfmt'],
-      \ 'go': ['gofmt']
+      \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \   'javascript': ['eslint'],
+      \   'javascriptreact': ['eslint'],
+      \   'typescript': ['eslint'],
+      \   'typescriptreact': ['eslint'],
+      \   'json': ['fixjson'],
       \}
+" let g:ale_fixers = {
+      " \ 'javascript': ['prettier', 'eslint'],
+      " \ 'php': ['phpcbf', 'php_cs_fixer'],
+      " \ 'python': ['autopep8'],
+      " \ 'sh': ['shfmt'],
+      " \ 'go': ['gofmt']
+      " \}
+
 " COC LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 source $MY_VIM_HOME/coc.vim

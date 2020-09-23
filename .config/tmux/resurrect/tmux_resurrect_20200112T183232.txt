@@ -1,4 +1,0 @@
-pane	0	0	:zsh	1	:*	0	:/home/fiuzagr	1	zsh	:
-pane	0	0	:zsh	1	:*	1	:/home/fiuzagr	0	zsh	:
-window	0	0	1	:*	9b94,157x31,0,0{88x31,0,0,0,68x31,89,0,1}
-state	0	

@@ -1,7 +1,8 @@
 {
   "dependencies": {
-    "coc-json": ">=1.2.4",
+    "coc-docker": ">=0.3.0",
+    "coc-json": ">=1.2.6",
     "coc-tabnine": ">=1.2.2",
-    "coc-tsserver": ">=1.4.9"
+    "coc-tsserver": ">=1.5.7"
   }
 }

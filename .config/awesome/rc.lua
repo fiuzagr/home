@@ -451,10 +451,10 @@ globalkeys = my_table.join(
         {description = "toggle mute", group = "hotkeys"}),
     awful.key({ altkey, "Control" }, "m",
         function ()
-            os.execute(string.format("amixer -q set %s 100%%", beautiful.volume.channel))
+            os.execute(string.format("pactl set-sink-volume @DEFAULT_SINK@ 150%%", beautiful.volume.channel))
             beautiful.volume.update()
         end,
-        {description = "volume 100%", group = "hotkeys"}),
+        {description = "volume 150%", group = "hotkeys"}),
     awful.key({ altkey, "Control" }, "0",
         function ()
             os.execute(string.format("amixer -q set %s 0%%", beautiful.volume.channel))

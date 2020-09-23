@@ -1,0 +1,16 @@
+pane	0	0	:zsh	0	:-	0	:/home/fiuzagr/workspace/fiuza	1	zsh	:
+pane	0	1	:Front	1	:*	0	:/home/fiuzagr/workspace	1	zsh	:
+pane	0	1	:Front	1	:*	1	:/home/fiuzagr/workspace	0	zsh	:
+pane	0	1	:Front	1	:*	2	:/home/fiuzagr/workspace	0	zsh	:
+pane	Ampli	0	:Shell	1	:*	0	:/home/fiuzagr/workspace	1	zsh	:
+pane	Ampli	1	:Front	0	:	0	:/home/fiuzagr/workspace/kroton/pitagoras-digital	0	zsh	:
+pane	Ampli	1	:Front	0	:	1	:/home/fiuzagr/workspace/kroton/pitagoras-digital/frontend	0	zsh	:
+pane	Ampli	1	:Front	0	:	2	:/home/fiuzagr/workspace/kroton/pitagoras-digital/frontend	1	zsh	:
+pane	Ampli	2	:Back	0	:-	0	:/home/fiuzagr/workspace/kroton/pitagoras-digital/backend	0	zsh	:
+pane	Ampli	2	:Back	0	:-	1	:/home/fiuzagr/workspace/kroton/pitagoras-digital/backend	1	zsh	:
+window	0	0	0	:-	b13e,157x31,0,0,1
+window	0	1	1	:*	4fc9,157x31,0,0{90x31,0,0,2,66x31,91,0[66x15,91,0,3,66x15,91,16,4]}
+window	Ampli	0	1	:*	b142,157x31,0,0,5
+window	Ampli	1	0	:	9b71,157x31,0,0{88x31,0,0,6,68x31,89,0[68x15,89,0,7,68x15,89,16,8]}
+window	Ampli	2	0	:-	ce32,157x31,0,0{88x31,0,0,9,68x31,89,0,10}
+state	Ampli	0

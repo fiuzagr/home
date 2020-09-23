@@ -1,0 +1,5 @@
+{
+  "tsserver.log": "verbose",
+  "tsserver.trace.server": "verbose",
+  "javascript.suggestionActions.enabled": false
+}
