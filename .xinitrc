@@ -31,7 +31,7 @@ xset s off
 unclutter -root &
 
 # monitors
-sh ~/.config/screenlayout/home-double.sh
+sh ~/.config/screenlayout/home.sh
 
 # open window manager
 exec awesome

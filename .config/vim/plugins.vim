@@ -121,6 +121,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 " Vim buffer bye
 Plug 'moll/vim-bbye'
+" Git integration
+Plug 'tpope/vim-fugitive'
 " Asynchronous Lint Engine
 Plug 'dense-analysis/ale'
 let g:ale_enabled = 1

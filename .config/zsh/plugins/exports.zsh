@@ -8,8 +8,8 @@ export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 export EDITOR='vim'
 
 # Browser
-export BROWSER='brave-browser'
+export BROWSER='brave'
 
 # PATH
-export PATH="${PATH}:/usr/local/tinygo/bin:${HOME}/.local/bin"
+export PATH="${PATH}:${HOME}/.local/bin"
 typeset -U path

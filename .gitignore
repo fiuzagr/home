@@ -6,7 +6,6 @@
 #
 # revert ignore
 !.asoundrc
-!.gitconfig
 !.gitignore
 !.gitmodules
 !.xinitrc
@@ -28,6 +27,8 @@
 !.config/git/**/*
 !.config/ranger/
 !.config/ranger/**/*
+!.config/screenlayout/
+!.config/screenlayout/**/*
 !.config/TabNine/
 !.config/TabNine/**/*
 !.config/tmux/
@@ -86,4 +87,3 @@ zsdoc/data
 .venv
 /tests/_output/*
 !/tests/_output/.gitkeep
-
