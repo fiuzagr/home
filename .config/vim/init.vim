@@ -143,6 +143,15 @@ noremap <leader>bp :bp<cr>
 noremap <leader>n :cn<cr>
 noremap <leader>p :cp<cr>
 
+" Copy to X CLIPBOARD
+map <leader><space>c :w !xsel -i -b<CR>
+map <leader><space>p :w !xsel -i -p<CR>
+map <leader><space>s :w !xsel -i -s<CR>
+" Paste from X CLIPBOARD
+map <leader><space>p :r!xsel -p<CR>
+map <leader><space>s :r!xsel -s<CR>
+map <leader><space>b :r!xsel -b<CR>
+
 """""""""""""""""""
 " Files conf
 """""""""""""""""""

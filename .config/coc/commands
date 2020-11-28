@@ -1,2 +1,5 @@
+tsserver.organizeImports
+coc-range-select
+coc-codeaction-line
 workspace.showOutput
 tsserver.openTsServerLog

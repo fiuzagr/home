@@ -69,6 +69,8 @@ Plug 'udalov/kotlin-vim'
 """""""""""""""""""
 " Resources
 """""""""""""""""""
+" Copy/Paste from clipboard
+"Plug 'christoomey/vim-system-copy'
 " Tools for writers
 Plug 'reedes/vim-pencil'
 nnoremap <silent> Q gqap

@@ -33,5 +33,8 @@ unclutter -root &
 # monitors
 sh ~/.config/screenlayout/home.sh
 
+# night time color temperature
+fluxgui &
+
 # open window manager
 exec awesome
