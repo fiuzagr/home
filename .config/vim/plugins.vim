@@ -112,9 +112,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'preservim/nerdcommenter'
 let g:NERDSpaceDelims = 1
 " CtrlP
-" Plug 'ctrlpvim/ctrlp.vim'
-" let g:ctrlp_working_path_mode = 'ra'
-" let g:ctrlp_custom_ignore = '\v[\/](\.git|node_modules)$'
+Plug 'ctrlpvim/ctrlp.vim'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = '\v[\/](\.git|node_modules)$'
 " Vim Editor Config
 Plug 'editorconfig/editorconfig-vim'
 " Easy Motion
