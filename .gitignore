@@ -41,6 +41,7 @@
 !.config/zsh/**/*
 !.config/dircolors
 !.config/pavucontrol.ini
+!.config/key.map
 
 !.local/
 !.local/bin/
