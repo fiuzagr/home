@@ -45,7 +45,7 @@ keycode  26 = dead_acute dead_grave
 keycode  27 = bracketleft braceleft ordfeminine 
 keycode  28 = Return          
 	alt		keycode  28 = Meta_Control_m  
-keycode  29 = Caps_Lock         
+keycode  29 = Control         
 
 keycode  39 = +ccedilla +Ccedilla
 keycode  40 = dead_tilde dead_circumflex

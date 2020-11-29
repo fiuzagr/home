@@ -1,0 +1,4 @@
+#!/bin/env sh
+
+echo "Resetting font cache, this may take a moment..."
+fc-cache -f $HOME/.local/share/fonts

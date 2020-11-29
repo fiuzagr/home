@@ -1,0 +1,10 @@
+#!/bin/env sh
+
+home_post_install() {
+  zplug install
+
+  sh ./home_install_nvm
+
+  git clone https://github.com/tmux-plugins/tpm $XDG_CACHE_HOME/tmux/plugins/tpm
+}
+home_post_install

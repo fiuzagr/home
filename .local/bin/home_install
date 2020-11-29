@@ -1,0 +1,40 @@
+#!/bin/env sh
+
+{
+
+home_clone() {
+  git init
+  git remote add origin https://github.com/fiuzagr/home.git
+  git fetch --all
+  git checkout awesome
+  git reset --hard HEAD
+  git submodule init
+  git submodule update --recursive
+}
+
+home_git_config() {
+  echo "[include]\\n\\tpath=$HOME/.config/git/gitconfig" >> $HOME/.gitconfig
+
+  echo
+  read -p "Set your Git config 'user.email': " user_email
+  git config --global user.email $user_email
+  echo
+  read -p "Set your Git config 'user.name': " user_name
+  git config --global user.name $user_name
+}
+
+home_set_key_map() {
+  sudo sed -i "s/KEYMAP/#KEYMAP/" /etc/vconsole.conf
+  echo "KEYMAP=$HOME/.config/key.map" | sudo tee -a /etc/vconsole.conf
+}
+
+home_install() {
+  home_clone
+  home_git_config
+  home_set_key_map
+
+  sh ./home_install_fonts
+}
+home_install
+
+}

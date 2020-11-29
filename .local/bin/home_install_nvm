@@ -4,6 +4,7 @@ latestVersion=`curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest |
 
 export NVM_VERSION=${NVM_VERSION:-$latestVersion}
 
+echo
 echo "Installing nvm@${NVM_VERSION} `[[ "$NVM_VERSION" = "$latestVersion" ]] && echo '(latest)'`"
 
 # path to install
