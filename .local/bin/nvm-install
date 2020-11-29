@@ -1,0 +1,17 @@
+#!/bin/env sh
+
+latestVersion=`curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")'`
+
+export NVM_VERSION=${NVM_VERSION:-$latestVersion}
+
+echo "Installing nvm@${NVM_VERSION} `[[ "$NVM_VERSION" = "$latestVersion" ]] && echo '(latest)'`"
+
+# path to install
+export NVM_DIR=${NVM_DIR:-$XDG_CACHE_HOME/nvm}
+mkdir -p $NVM_DIR
+
+# install
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/${NVM_VERSION}/install.sh | bash
+
+# source nvm.sh
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
