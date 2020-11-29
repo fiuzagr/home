@@ -6,7 +6,7 @@ home_clone() {
   git init
   git remote add origin https://github.com/fiuzagr/home.git
   git fetch --all
-  git checkout awesome
+  git checkout main
   git reset --hard HEAD
   git submodule init
   git submodule update --recursive
