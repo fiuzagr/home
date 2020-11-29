@@ -22,7 +22,8 @@ startx
 Configure GitHub:
 
 ```shell
-ssh-keygen -t rsa -b 4096 -C "<username>" cat ~/.ssh/id_rsa.pub | xsel -b
+ssh-keygen -t rsa -b 4096 -C "<username>"
+cat ~/.ssh/id_rsa.pub | xsel -b
 
 gpg --full-generate-key
 gpg --list-secret-keys --keyid-format LONG
