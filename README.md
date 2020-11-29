@@ -13,6 +13,7 @@ home_post_install
 yay xorg-xinit
 yay brave
 yay unclutter
+yay pygobject
 yay fluxgui
 yay xsel
 
