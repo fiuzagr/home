@@ -19,6 +19,7 @@ xset r rate 250 50 &
 # Disable dpms
 xset -dpms
 # No blank screen
+xset s 0 0
 xset s off
 # setterm -blank 0 -powersave off -powerdown 0
 
@@ -35,6 +36,9 @@ sh ~/.config/screenlayout/home.sh
 
 # night time color temperature
 fluxgui &
+
+# power management
+powerkit &
 
 # open window manager
 exec awesome

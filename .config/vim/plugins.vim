@@ -138,10 +138,10 @@ let g:ale_fix_on_save = 1
 " let g:ale_set_quickfix = 1
 let g:ale_fixers = {
       \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-      \   'javascript': ['eslint'],
-      \   'javascriptreact': ['eslint'],
-      \   'typescript': ['eslint'],
-      \   'typescriptreact': ['eslint'],
+      \   'javascript': ['eslint', 'prettier'],
+      \   'javascriptreact': ['eslint', 'prettier'],
+      \   'typescript': ['eslint', 'prettier'],
+      \   'typescriptreact': ['eslint', 'prettier'],
       \   'json': ['fixjson'],
       \}
 " let g:ale_fixers = {

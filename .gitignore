@@ -29,8 +29,6 @@
 !.config/ranger/**/*
 !.config/screenlayout/
 !.config/screenlayout/**/*
-!.config/TabNine/
-!.config/TabNine/**/*
 !.config/tmux/
 !.config/tmux/**/*
 !.config/vim/
@@ -49,6 +47,9 @@
 !.local/share/
 !.local/share/fonts/
 !.local/share/fonts/*
+
+.config/TabNine/
+.config/TabNine/**/*
 
 #
 # ignore specific files
