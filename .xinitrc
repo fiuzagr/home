@@ -40,5 +40,8 @@ fluxgui &
 # power management
 powerkit &
 
+# bluetooth
+blueman-applet &
+
 # open window manager
 exec awesome
