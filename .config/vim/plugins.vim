@@ -95,7 +95,7 @@ Plug 'junegunn/fzf', {
 " NERDTree
 Plug 'scrooloose/nerdtree'
 map <C-e> :NERDTreeToggle<CR>
-nnoremap <leader>e :NERDTreeFind<CR>
+map <C-f> :NERDTreeFind<CR>
 let g:NERDTreeBookmarksFile = $MY_VIM_HOME . '/.NERDTreeBookmarks'
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeQuitOnOpen = 1

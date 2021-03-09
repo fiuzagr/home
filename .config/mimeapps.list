@@ -13,6 +13,7 @@ application/x-extension-xht=userapp-Firefox-VON9C0.desktop
 x-scheme-handler/webcal=brave-browser.desktop
 x-scheme-handler/postman=Postman.desktop
 x-scheme-handler/mailto=brave-browser.desktop
+x-scheme-handler/msteams=teams.desktop
 
 [Added Associations]
 x-scheme-handler/http=userapp-Firefox-VON9C0.desktop;

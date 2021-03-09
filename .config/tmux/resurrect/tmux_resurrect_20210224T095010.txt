@@ -1,0 +1,16 @@
+pane	0	0	:zsh	1	:*	0	:/home/fiuzagr	1	zsh	:
+pane	DS	0	:zsh	1	:*	0	:/home/fiuzagr/workspace/ampli/ampli-design-system	1	zsh	:
+pane	DS	1	:Editor	0	:	0	:/home/fiuzagr/workspace/ampli/ampli-design-system	1	zsh	:
+pane	DS	2	:zsh	0	:-	0	:/home/fiuzagr/workspace/ampli/ampli-design-system	1	zsh	:
+pane	Front	0	:Shell	1	:*	0	:/home/fiuzagr/workspace/ampli/ampli-web-frontend	1	zsh	:
+pane	Front	1	:Editor	0	:-	0	:/home/fiuzagr/workspace/ampli/ampli-web-frontend	1	zsh	:vim
+pane	Front	2	:CLI	0	:	0	:/home/fiuzagr/workspace/ampli/ampli-web-frontend	1	zsh	:
+pane	Front	2	:CLI	0	:	1	:/home/fiuzagr/workspace/ampli/ampli-web-frontend	0	zsh	:npm
+window	0	0	1	:*	c13e,134x26,0,0,1
+window	DS	0	1	:*	c143,134x26,0,0,6
+window	DS	1	0	:	c144,134x26,0,0,7
+window	DS	2	0	:-	c145,134x26,0,0,8
+window	Front	0	1	:*	c13f,134x26,0,0,2
+window	Front	1	0	:-	c140,134x26,0,0,3
+window	Front	2	0	:	acca,134x26,0,0[134x13,0,0,4,134x12,0,14,5]
+state	Front	0
