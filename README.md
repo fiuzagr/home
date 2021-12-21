@@ -3,10 +3,16 @@
 [Manjaro Architect](https://manjaro.org/downloads/official/architect/)
 installed custom with yay and Awesome window manager.
 
+## Notes
+
+1. Install Blueman.
+1. Install PipeWire instead PulseAudio, Jack and ALSA.
+
+
 ## Configure profile
 
 ```shell
-$ curl -o- https://raw.githubusercontent.com/fiuzagr/home/awesome/.local/bin/home_install | bash
+$ curl -o- https://raw.githubusercontent.com/fiuzagr/home/main/.local/bin/home_install | bash
 
 [logout > login]
 

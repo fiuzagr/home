@@ -76,6 +76,7 @@ Plug 'StanAngeloff/php.vim'
 "Plug 'christoomey/vim-system-copy'
 " Tools for writers
 Plug 'reedes/vim-pencil'
+let g:pencil#wrapModeDefault = 'soft'
 nnoremap <silent> Q gqap
 Plug 'reedes/vim-lexical'
 let g:lexical#spelllang = ['en_us', 'pt_br',]
