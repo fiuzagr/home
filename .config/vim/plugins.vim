@@ -66,6 +66,9 @@ Plug 'tmux-plugins/vim-tmux'
 " Kotlin
 Plug 'udalov/kotlin-vim'
 
+" PHP
+Plug 'StanAngeloff/php.vim'
+
 """""""""""""""""""
 " Resources
 """""""""""""""""""

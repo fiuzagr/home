@@ -1,9 +1,0 @@
-pane	0	0	:zsh	1	:*	0	:/home/fiuzagr	1	zsh	:
-pane	Front	0	:Shell	1	:*	0	:/home/fiuzagr/workspace/ampli/ampli-web-frontend	1	zsh	:
-pane	Front	1	:Editor	0	:	0	:/home/fiuzagr/workspace/ampli/ampli-web-frontend	1	zsh	:
-pane	Front	2	:CLI	0	:-	0	:/home/fiuzagr/workspace/ampli/ampli-web-frontend	1	zsh	:
-window	0	0	1	:*	c13d,134x26,0,0,0
-window	Front	0	1	:*	c13f,134x26,0,0,2
-window	Front	1	0	:	c140,134x26,0,0,3
-window	Front	2	0	:-	c141,134x26,0,0,4
-state	Front	0

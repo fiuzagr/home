@@ -56,7 +56,10 @@
 *history*
 *used*
 pulse/
-plug.vim
+plug.vim*
+.config/tmux/resurrect/tmux_resurrect*
+.local/bin/ampli-tunnel
+
 
 # Created by https://www.gitignore.io/api/vim,zsh,linux
 ### Linux ###
