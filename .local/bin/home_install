@@ -13,7 +13,7 @@ home_clone() {
 }
 
 home_git_config() {
-  echo "[include]\\n\\tpath=$HOME/.config/git/gitconfig" >> $HOME/.gitconfig
+  echo "[include]\n\tpath=$HOME/.config/git/gitconfig" >> $HOME/.gitconfig
 
   echo
   read -p "Set your Git config 'user.email': " user_email
@@ -21,6 +21,9 @@ home_git_config() {
   echo
   read -p "Set your Git config 'user.name': " user_name
   git config --global user.name $user_name
+  echo
+  echo "Setting Git config 'init.defaultBranch' to 'main'"
+  git config --global init.defaultBranch main
 }
 
 home_set_key_map() {
@@ -29,8 +32,8 @@ home_set_key_map() {
 }
 
 home_install() {
-  home_clone
   home_git_config
+  home_clone
   home_set_key_map
 
   sh ./home_install_fonts
