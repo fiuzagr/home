@@ -1,4 +1,4 @@
-#!/bin/env sh
+#!/bin/env bash
 
 {
 
@@ -6,7 +6,7 @@ home_clone() {
   git init
   git remote add origin https://github.com/fiuzagr/home.git
   git fetch --all
-  git checkout main
+  git checkout --force main
   git reset --hard HEAD
   git submodule init
   git submodule update --recursive
@@ -16,10 +16,12 @@ home_git_config() {
   printf "[include]\n\tpath=$HOME/.config/git/gitconfig" >> $HOME/.gitconfig
 
   echo
-  read -p "Set your Git config 'user.email': " user_email
+  echo "Set your Git config 'user.email': "
+  read user_email
   git config --global user.email $user_email
   echo
-  read -p "Set your Git config 'user.name': " user_name
+  echo "Set your Git config 'user.name': "
+  read user_name
   git config --global user.name $user_name
   echo
   echo "Setting Git config 'init.defaultBranch' to 'main'"
@@ -38,7 +40,7 @@ home_install() {
   home_clone
   home_set_key_map
 
-  sh ./home_install_fonts
+  bash $HOME/.local/bin/home_install_fonts
 }
 home_install
 

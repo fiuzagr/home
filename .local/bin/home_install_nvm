@@ -1,4 +1,4 @@
-#!/bin/env sh
+#!/bin/env bash
 
 latestVersion=`curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")'`
 
