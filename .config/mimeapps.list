@@ -14,6 +14,7 @@ x-scheme-handler/webcal=brave-browser.desktop
 x-scheme-handler/postman=Postman.desktop
 x-scheme-handler/mailto=brave-browser.desktop
 x-scheme-handler/msteams=teams.desktop
+x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
 
 [Added Associations]
 x-scheme-handler/http=userapp-Firefox-VON9C0.desktop;

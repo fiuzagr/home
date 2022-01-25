@@ -13,3 +13,6 @@ export BROWSER='brave'
 # PATH
 export PATH="${PATH}:${HOME}/.local/bin"
 typeset -U path
+
+# Wayland
+#export _JAVA_AWT_WM_NONREPARENTING=1

@@ -19,6 +19,8 @@
 !.config/coc/
 !.config/coc/*
 !.config/coc/extensions/package.json
+!.config/foot/
+!.config/foot/**/*
 !.config/fontconfig/
 !.config/fontconfig/fonts.conf
 !.config/fzf/

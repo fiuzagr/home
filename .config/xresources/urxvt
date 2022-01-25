@@ -1,6 +1,7 @@
 ! vim: set filetype=xdefaults:
 
 !! URxvt Xresources config
+URxvt.title: hell
 URxvt.letterSpace: 0
 URxvt.lineSpace: 1.15
 URxvt.internalBorder: 16
@@ -12,3 +13,9 @@ URxvt.scrollBar_right: false
 URxvt.urgentOnBell: true
 URxvt.depth: 24
 URxvt.iso14755: false
+
+! use xft font
+URxvt*font: xft:MesloLGS NF:style=Regular:size=14:antialias=true
+URxvt*boldFont: xft:MesloLGS NF:style=Bold:size=14:antialias=true
+URxvt*italicFont: xft:MesloLGS NF:style=Italic:size=14:antialias=true
+URxvt*boldItalicfont: xft:MesloLGS NF:style=Bold Italic:size=14:antialias=true

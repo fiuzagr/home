@@ -9,7 +9,7 @@
 #include ".config/xresources/font"
 
 !! URxvt
-! #include ".config/xresources/urxvt"
+#include ".config/xresources/urxvt"
 
 !! XTerm
 #include ".config/xresources/xterm"
