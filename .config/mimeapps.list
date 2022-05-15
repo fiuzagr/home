@@ -28,3 +28,4 @@ application/x-extension-shtml=userapp-Firefox-VON9C0.desktop;
 application/xhtml+xml=userapp-Firefox-VON9C0.desktop;
 application/x-extension-xhtml=userapp-Firefox-VON9C0.desktop;
 application/x-extension-xht=userapp-Firefox-VON9C0.desktop;
+video/mp4=vlc.desktop;

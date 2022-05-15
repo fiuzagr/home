@@ -38,7 +38,7 @@ home_set_key_map() {
 home_install() {
   home_git_config
   home_clone
-  home_set_key_map
+  #home_set_key_map
 
   bash $HOME/.local/bin/home_install_fonts
 }

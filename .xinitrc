@@ -3,7 +3,7 @@
 # gnome keyring
 # eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 # export SSH_AUTH_SOCK
-source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
+#source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 
 # X settings
 xrdb -merge .Xresources
@@ -34,19 +34,19 @@ xset s off
 # lightson+ -d 2 &
 
 # hide mouse
-unclutter -root &
+#unclutter -root &
 
 # monitors
 sh ~/.config/screenlayout/home.sh
 
 # night time color temperature
-fluxgui &
+#fluxgui &
 
 # power management
-powerkit &
+#powerkit &
 
 # bluetooth
-blueman-applet &
+#blueman-applet &
 
 # open window manager
-exec awesome
+#exec awesome
