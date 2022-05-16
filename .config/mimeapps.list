@@ -1,9 +1,9 @@
 [Default Applications]
-x-scheme-handler/http=userapp-Firefox-VON9C0.desktop
-x-scheme-handler/https=userapp-Firefox-VON9C0.desktop
+x-scheme-handler/http=brave-browser.desktop
+x-scheme-handler/https=brave-browser.desktop
 x-scheme-handler/ftp=userapp-Firefox-VON9C0.desktop
 x-scheme-handler/chrome=userapp-Firefox-VON9C0.desktop
-text/html=userapp-Firefox-VON9C0.desktop
+text/html=brave-browser.desktop
 application/x-extension-htm=userapp-Firefox-VON9C0.desktop
 application/x-extension-html=userapp-Firefox-VON9C0.desktop
 application/x-extension-shtml=userapp-Firefox-VON9C0.desktop
@@ -15,6 +15,8 @@ x-scheme-handler/postman=Postman.desktop
 x-scheme-handler/mailto=brave-browser.desktop
 x-scheme-handler/msteams=teams.desktop
 x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
+x-scheme-handler/about=brave-browser.desktop
+x-scheme-handler/unknown=brave-browser.desktop
 
 [Added Associations]
 x-scheme-handler/http=userapp-Firefox-VON9C0.desktop;

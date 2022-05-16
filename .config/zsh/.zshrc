@@ -19,7 +19,7 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug "romkatv/powerlevel10k", as:theme, depth:1
 # zplug "dracula/zsh", as:theme, depth:1
 # zplug "chrissicool/zsh-256color", as:theme, depth:1
-zplug "agkozak/agkozak-zsh-prompt"
+#zplug "agkozak/agkozak-zsh-prompt"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-autosuggestions"
