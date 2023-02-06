@@ -12,7 +12,7 @@ call plug#begin(expand('$XDG_CACHE_HOME') . '/vim/plugged')
 " Settings
 """""""""""""""""""
 " Sensible
-"Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sensible'
 " Readline key bindings
 " Plug 'tpope/vim-rsi'
 
@@ -20,7 +20,7 @@ call plug#begin(expand('$XDG_CACHE_HOME') . '/vim/plugged')
 " Appearance
 """""""""""""""""""
 " Theme
-"Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'dracula/vim', { 'as': 'dracula' }
 " Devicons
 "Plug 'ryanoasis/vim-devicons'
 " Airline

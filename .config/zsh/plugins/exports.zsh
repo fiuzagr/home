@@ -8,7 +8,8 @@ export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 export EDITOR='vim'
 
 # Browser
-export BROWSER='brave'
+export BROWSER='brave-browser'
+export CHROME_EXECUTABLE='/usr/bin/brave-browser'
 
 # PATH
 export PATH="${PATH}:${HOME}/.local/bin"

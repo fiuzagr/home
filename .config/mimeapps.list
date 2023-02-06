@@ -14,7 +14,7 @@ x-scheme-handler/webcal=brave-browser.desktop
 x-scheme-handler/postman=Postman.desktop
 x-scheme-handler/mailto=brave-browser.desktop
 x-scheme-handler/msteams=teams.desktop
-x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
+x-scheme-handler/eclipse+command=_usr_share_dbeaver-ce_.desktop
 x-scheme-handler/about=brave-browser.desktop
 x-scheme-handler/unknown=brave-browser.desktop
 
@@ -31,3 +31,4 @@ application/xhtml+xml=userapp-Firefox-VON9C0.desktop;
 application/x-extension-xhtml=userapp-Firefox-VON9C0.desktop;
 application/x-extension-xht=userapp-Firefox-VON9C0.desktop;
 video/mp4=vlc.desktop;
+video/x-matroska=vlc.desktop;
